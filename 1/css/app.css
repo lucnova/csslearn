@@ -1,0 +1,39 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* 
+    BORDER BOX
+        Al indicar un box-sizing: border-box
+        se puede hacer que el tamaño indicado sea
+        el actual y no sea alterado por el contenido.
+
+        (Es decir, si le aplicas width: 200px a
+        algun elemento y luego un padding: 20px,
+        el ancho será 200px siempre y no 240px).
+*/
+
+h1 {
+	color: #210062;
+}
+
+h1 span {
+	color: rgb(0, 0, 0);
+}
+
+.nav {
+	text-transform: uppercase;
+}
+
+.about-us {
+	background-color: red;
+	box-sizing: border-box;
+	padding: 25px;
+	width: 256px;
+}
