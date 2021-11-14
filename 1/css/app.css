@@ -31,9 +31,9 @@ h1 span {
 	text-transform: uppercase;
 }
 
-.header h1 {
-	padding-top: 64px;
-	padding-bottom: 64px;
+.header {
+	margin-top: 64px;
+	margin-bottom: 64px;
 }
 
 .about-us {
