@@ -1,14 +1,7 @@
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
+/* ==[ Global ]== */
 
 /* 
+Nota:
     BORDER BOX
         Al indicar un box-sizing: border-box
         se puede hacer que el tamaño indicado sea
@@ -19,6 +12,18 @@ html {
         el ancho será 200px siempre y no 240px).
 */
 
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* ==[ Elementos ]== */
+
 h1 {
 	color: #940000;
 }
@@ -26,6 +31,8 @@ h1 {
 h1 span {
 	color: rgb(0, 0, 0);
 }
+
+/* ==[ Clases ]== */
 
 .nav {
 	text-transform: uppercase;
@@ -41,3 +48,28 @@ h1 span {
 	padding: 25px;
 	width: 256px;
 }
+
+/* 
+a {
+    background-color: rgb(255, 0, 76);
+    display: inline-block;
+    height: 32px;
+    width: 128px;
+}
+
+Nota:
+    display:
+        Un display de tipo 'block' hará que el elemento se separe
+        por debajo del anterior sin importar que tanto tamaño libre
+        haya en el lado derecho.
+
+        Un display de tipo 'inline' hará que el elemento se
+        coloque uno al lado del otro y con un tamaño de ancho y alto
+        ya definido (No se puede colocar un 'width' ni 'height').
+
+        Con 'inline-block' hace que se comporte coo un elemento
+        inline pero puedes colocarle un width y height.
+
+    Flexbox hace que esta propiedad ya no sea tan relevante
+    como lo era antes.
+*/
