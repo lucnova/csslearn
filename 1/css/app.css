@@ -58,14 +58,23 @@ Nota:
 */
 
 /*
-FLEXBOX:
+FLEXBOX:    Es un modelo Unidimensional (Largo y Ancho).
     Al indicar 'display: flex;' ya habilita flexbox en el elemento.
     Habilita las propiedades de flexbox.
     No es necesario usar flex-direction.
+
+    Segun flex-direction, 'justify-content' y 'align-items' hacen diferentes cosas.
+
+    row:    horizontalmente => justify-content
+            verticalmente => align-items
+
+    col:    horizontalmente => align-items
+            verticalmente => justify-content
 */
 .top-navbar {
     display: flex;
 	padding: 16px 8px;
+    justify-content: space-between;
 }
 
 .header {
