@@ -20,7 +20,7 @@ html {
 */
 
 h1 {
-	color: #210062;
+	color: #940000;
 }
 
 h1 span {
@@ -29,6 +29,11 @@ h1 span {
 
 .nav {
 	text-transform: uppercase;
+}
+
+.header h1 {
+	padding-top: 64px;
+	padding-bottom: 64px;
 }
 
 .about-us {
