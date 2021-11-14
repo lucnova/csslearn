@@ -57,7 +57,14 @@ Nota:
         (Si se quiere un lado especifico es 'border-[side]'.
 */
 
+/*
+FLEXBOX:
+    Al indicar 'display: flex;' ya habilita flexbox en el elemento.
+    Habilita las propiedades de flexbox.
+    No es necesario usar flex-direction.
+*/
 .top-navbar {
+    display: flex;
 	padding: 16px 8px;
 }
 
