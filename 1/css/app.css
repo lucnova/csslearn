@@ -64,10 +64,16 @@ Nota:
 	text-align: center;
 }
 
-.about-us {
-	background-color: red;
-	padding: 25px;
-	width: 256px;
+/*
+Nota:
+    url() marca una dirección relativa a la hoja de estilos
+*/
+
+.hero {
+	background-image: url(../img/principal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 256px;
 }
 
 /*                                                                       
