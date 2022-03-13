@@ -35,7 +35,21 @@ a {
 	text-decoration: none;
 }
 
+/* Imagenes: Solamente tomar el tamaño del elemento dado */
+img {
+	max-width: 100%;
+}
+
 /* ==[ Clases ]== */
+
+/*
+"Centrado" provisional
+*/
+
+.section-container {
+	max-width: 80vw;
+	margin: 0 auto;
+}
 
 .nav-container {
 	border-top: 1px solid rgb(15, 15, 15);
@@ -72,9 +86,9 @@ FLEXBOX:    Es un modelo Unidimensional (Largo y Ancho).
             verticalmente => justify-content
 */
 .top-navbar {
-    display: flex;
+	display: flex;
 	padding: 16px 8px;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .header {
@@ -119,3 +133,24 @@ Nota:
     Flexbox hace que esta propiedad ya no sea tan relevante
     como lo era antes.
 */
+
+/*
+	CSS Grid:
+		Permite alinear y acomodar elementos como si fuera una tabla
+		
+	Funcion repeat(N, val) para repetir N veces un valor
+
+	Medida fr => fraccion
+		Aplicable solo a display: grid;
+		Divide acoplando el tamaño del elemento en fracciones
+		Equivalente a col-N en bootstrap
+*/
+
+/* ==[ Secciones ]== */
+
+.cat-section {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/* Separacion en ambos lados (row y col) */
+	gap: 20px;
+}
